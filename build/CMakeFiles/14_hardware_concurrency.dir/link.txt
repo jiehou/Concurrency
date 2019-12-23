@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/14_hardware_concurrency.dir/cppnuts/14_hardware_concurrency.cpp.o  -o 14_hardware_concurrency 

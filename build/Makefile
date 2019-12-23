@@ -267,6 +267,19 @@ part2/fast:
 .PHONY : 07_recursive_mutex/fast
 
 #=============================================================================
+# Target rules for targets named 14_hardware_concurrency
+
+# Build rule for target.
+14_hardware_concurrency: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 14_hardware_concurrency
+.PHONY : 14_hardware_concurrency
+
+# fast build rule for target.
+14_hardware_concurrency/fast:
+	$(MAKE) -f CMakeFiles/14_hardware_concurrency.dir/build.make CMakeFiles/14_hardware_concurrency.dir/build
+.PHONY : 14_hardware_concurrency/fast
+
+#=============================================================================
 # Target rules for targets named 08_lock_guard
 
 # Build rule for target.
@@ -576,6 +589,33 @@ cppnuts/13_lock.cpp.s:
 	$(MAKE) -f CMakeFiles/13_lock.dir/build.make CMakeFiles/13_lock.dir/cppnuts/13_lock.cpp.s
 .PHONY : cppnuts/13_lock.cpp.s
 
+cppnuts/14_hardware_concurrency.o: cppnuts/14_hardware_concurrency.cpp.o
+
+.PHONY : cppnuts/14_hardware_concurrency.o
+
+# target to build an object file
+cppnuts/14_hardware_concurrency.cpp.o:
+	$(MAKE) -f CMakeFiles/14_hardware_concurrency.dir/build.make CMakeFiles/14_hardware_concurrency.dir/cppnuts/14_hardware_concurrency.cpp.o
+.PHONY : cppnuts/14_hardware_concurrency.cpp.o
+
+cppnuts/14_hardware_concurrency.i: cppnuts/14_hardware_concurrency.cpp.i
+
+.PHONY : cppnuts/14_hardware_concurrency.i
+
+# target to preprocess a source file
+cppnuts/14_hardware_concurrency.cpp.i:
+	$(MAKE) -f CMakeFiles/14_hardware_concurrency.dir/build.make CMakeFiles/14_hardware_concurrency.dir/cppnuts/14_hardware_concurrency.cpp.i
+.PHONY : cppnuts/14_hardware_concurrency.cpp.i
+
+cppnuts/14_hardware_concurrency.s: cppnuts/14_hardware_concurrency.cpp.s
+
+.PHONY : cppnuts/14_hardware_concurrency.s
+
+# target to generate assembly for a file
+cppnuts/14_hardware_concurrency.cpp.s:
+	$(MAKE) -f CMakeFiles/14_hardware_concurrency.dir/build.make CMakeFiles/14_hardware_concurrency.dir/cppnuts/14_hardware_concurrency.cpp.s
+.PHONY : cppnuts/14_hardware_concurrency.cpp.s
+
 multithreading/part1.o: multithreading/part1.cpp.o
 
 .PHONY : multithreading/part1.o
@@ -650,6 +690,7 @@ help:
 	@echo "... 13_lock"
 	@echo "... 06_timedmutex"
 	@echo "... 07_recursive_mutex"
+	@echo "... 14_hardware_concurrency"
 	@echo "... 08_lock_guard"
 	@echo "... cppnuts/02_joint_and_detach.o"
 	@echo "... cppnuts/02_joint_and_detach.i"
@@ -684,6 +725,9 @@ help:
 	@echo "... cppnuts/13_lock.o"
 	@echo "... cppnuts/13_lock.i"
 	@echo "... cppnuts/13_lock.s"
+	@echo "... cppnuts/14_hardware_concurrency.o"
+	@echo "... cppnuts/14_hardware_concurrency.i"
+	@echo "... cppnuts/14_hardware_concurrency.s"
 	@echo "... multithreading/part1.o"
 	@echo "... multithreading/part1.i"
 	@echo "... multithreading/part1.s"
