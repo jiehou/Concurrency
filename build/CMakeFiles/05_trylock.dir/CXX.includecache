@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/cppnuts/05_trylock.cpp
+mutex
+-
+thread
+-
+iostream
+-
+chrono
+-
+

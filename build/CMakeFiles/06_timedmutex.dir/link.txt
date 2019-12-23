@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/06_timedmutex.dir/cppnuts/06_timedmutex.cpp.o  -o 06_timedmutex 

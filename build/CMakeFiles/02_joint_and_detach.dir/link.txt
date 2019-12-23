@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/02_joint_and_detach.dir/cppnuts/02_joint_and_detach.cpp.o  -o 02_joint_and_detach 

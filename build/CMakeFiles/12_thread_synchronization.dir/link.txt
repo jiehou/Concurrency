@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/12_thread_synchronization.dir/cppnuts/12_thread_synchronization.cpp.o  -o 12_thread_synchronization 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/cppnuts/08_lock_guard.cpp
+iostream
+-
+thread
+-
+mutex
+-
+string
+-
+

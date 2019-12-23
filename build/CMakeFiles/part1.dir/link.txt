@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/part1.dir/multithreading/part1.cpp.o  -o part1 

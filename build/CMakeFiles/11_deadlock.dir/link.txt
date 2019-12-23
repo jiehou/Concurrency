@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/11_deadlock.dir/cppnuts/11_deadlock.cpp.o  -o 11_deadlock 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/cppnuts/11_deadlock.cpp
+iostream
+-
+thread
+-
+mutex
+-
+chrono
+-
+

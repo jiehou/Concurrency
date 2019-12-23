@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/05_trylock.dir/cppnuts/05_trylock.cpp.o  -o 05_trylock 

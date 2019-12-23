@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread  -rdynamic CMakeFiles/08_lock_guard.dir/cppnuts/08_lock_guard.cpp.o  -o 08_lock_guard 
