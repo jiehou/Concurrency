@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=algorithm_practice
+CMAKE_PROJECT_NAME:STATIC=learn_concurrency
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -186,6 +186,12 @@ algorithm_practice_BINARY_DIR:STATIC=/home/houje/Study/concurrency/build
 
 //Value Computed by CMake
 algorithm_practice_SOURCE_DIR:STATIC=/home/houje/Study/concurrency
+
+//Value Computed by CMake
+learn_concurrency_BINARY_DIR:STATIC=/home/houje/Study/concurrency/build
+
+//Value Computed by CMake
+learn_concurrency_SOURCE_DIR:STATIC=/home/houje/Study/concurrency
 
 
 ########################

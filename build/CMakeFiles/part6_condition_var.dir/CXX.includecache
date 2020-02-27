@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/multithreading/part6_condition_var.cpp
+iostream
+-
+queue
+-
+thread
+-
+mutex
+-
+chrono
+-
+

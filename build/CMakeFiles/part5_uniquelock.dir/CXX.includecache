@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/multithreading/part5_uniquelock.cpp
+iostream
+-
+fstream
+-
+mutex
+-
+chrono
+-
+thread
+-
+functional
+-
+

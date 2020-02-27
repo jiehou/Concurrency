@@ -111,160 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named part1
+# Target rules for targets named 08_lock_guard
 
 # Build rule for target.
-part1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part1
-.PHONY : part1
+08_lock_guard: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 08_lock_guard
+.PHONY : 08_lock_guard
 
 # fast build rule for target.
-part1/fast:
-	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
-.PHONY : part1/fast
-
-#=============================================================================
-# Target rules for targets named part2
-
-# Build rule for target.
-part2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part2
-.PHONY : part2
-
-# fast build rule for target.
-part2/fast:
-	$(MAKE) -f CMakeFiles/part2.dir/build.make CMakeFiles/part2.dir/build
-.PHONY : part2/fast
-
-#=============================================================================
-# Target rules for targets named 12_thread_synchronization
-
-# Build rule for target.
-12_thread_synchronization: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 12_thread_synchronization
-.PHONY : 12_thread_synchronization
-
-# fast build rule for target.
-12_thread_synchronization/fast:
-	$(MAKE) -f CMakeFiles/12_thread_synchronization.dir/build.make CMakeFiles/12_thread_synchronization.dir/build
-.PHONY : 12_thread_synchronization/fast
-
-#=============================================================================
-# Target rules for targets named 11_deadlock
-
-# Build rule for target.
-11_deadlock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 11_deadlock
-.PHONY : 11_deadlock
-
-# fast build rule for target.
-11_deadlock/fast:
-	$(MAKE) -f CMakeFiles/11_deadlock.dir/build.make CMakeFiles/11_deadlock.dir/build
-.PHONY : 11_deadlock/fast
-
-#=============================================================================
-# Target rules for targets named 10_conditional_var
-
-# Build rule for target.
-10_conditional_var: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 10_conditional_var
-.PHONY : 10_conditional_var
-
-# fast build rule for target.
-10_conditional_var/fast:
-	$(MAKE) -f CMakeFiles/10_conditional_var.dir/build.make CMakeFiles/10_conditional_var.dir/build
-.PHONY : 10_conditional_var/fast
-
-#=============================================================================
-# Target rules for targets named 03_mutex
-
-# Build rule for target.
-03_mutex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 03_mutex
-.PHONY : 03_mutex
-
-# fast build rule for target.
-03_mutex/fast:
-	$(MAKE) -f CMakeFiles/03_mutex.dir/build.make CMakeFiles/03_mutex.dir/build
-.PHONY : 03_mutex/fast
-
-#=============================================================================
-# Target rules for targets named 02_joint_and_detach
-
-# Build rule for target.
-02_joint_and_detach: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 02_joint_and_detach
-.PHONY : 02_joint_and_detach
-
-# fast build rule for target.
-02_joint_and_detach/fast:
-	$(MAKE) -f CMakeFiles/02_joint_and_detach.dir/build.make CMakeFiles/02_joint_and_detach.dir/build
-.PHONY : 02_joint_and_detach/fast
-
-#=============================================================================
-# Target rules for targets named 09_unique_lock
-
-# Build rule for target.
-09_unique_lock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 09_unique_lock
-.PHONY : 09_unique_lock
-
-# fast build rule for target.
-09_unique_lock/fast:
-	$(MAKE) -f CMakeFiles/09_unique_lock.dir/build.make CMakeFiles/09_unique_lock.dir/build
-.PHONY : 09_unique_lock/fast
-
-#=============================================================================
-# Target rules for targets named 05_trylock
-
-# Build rule for target.
-05_trylock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 05_trylock
-.PHONY : 05_trylock
-
-# fast build rule for target.
-05_trylock/fast:
-	$(MAKE) -f CMakeFiles/05_trylock.dir/build.make CMakeFiles/05_trylock.dir/build
-.PHONY : 05_trylock/fast
-
-#=============================================================================
-# Target rules for targets named 13_lock
-
-# Build rule for target.
-13_lock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 13_lock
-.PHONY : 13_lock
-
-# fast build rule for target.
-13_lock/fast:
-	$(MAKE) -f CMakeFiles/13_lock.dir/build.make CMakeFiles/13_lock.dir/build
-.PHONY : 13_lock/fast
-
-#=============================================================================
-# Target rules for targets named 06_timedmutex
-
-# Build rule for target.
-06_timedmutex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 06_timedmutex
-.PHONY : 06_timedmutex
-
-# fast build rule for target.
-06_timedmutex/fast:
-	$(MAKE) -f CMakeFiles/06_timedmutex.dir/build.make CMakeFiles/06_timedmutex.dir/build
-.PHONY : 06_timedmutex/fast
-
-#=============================================================================
-# Target rules for targets named 07_recursive_mutex
-
-# Build rule for target.
-07_recursive_mutex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 07_recursive_mutex
-.PHONY : 07_recursive_mutex
-
-# fast build rule for target.
-07_recursive_mutex/fast:
-	$(MAKE) -f CMakeFiles/07_recursive_mutex.dir/build.make CMakeFiles/07_recursive_mutex.dir/build
-.PHONY : 07_recursive_mutex/fast
+08_lock_guard/fast:
+	$(MAKE) -f CMakeFiles/08_lock_guard.dir/build.make CMakeFiles/08_lock_guard.dir/build
+.PHONY : 08_lock_guard/fast
 
 #=============================================================================
 # Target rules for targets named 14_hardware_concurrency
@@ -280,17 +137,186 @@ part2/fast:
 .PHONY : 14_hardware_concurrency/fast
 
 #=============================================================================
-# Target rules for targets named 08_lock_guard
+# Target rules for targets named 07_recursive_mutex
 
 # Build rule for target.
-08_lock_guard: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 08_lock_guard
-.PHONY : 08_lock_guard
+07_recursive_mutex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 07_recursive_mutex
+.PHONY : 07_recursive_mutex
 
 # fast build rule for target.
-08_lock_guard/fast:
-	$(MAKE) -f CMakeFiles/08_lock_guard.dir/build.make CMakeFiles/08_lock_guard.dir/build
-.PHONY : 08_lock_guard/fast
+07_recursive_mutex/fast:
+	$(MAKE) -f CMakeFiles/07_recursive_mutex.dir/build.make CMakeFiles/07_recursive_mutex.dir/build
+.PHONY : 07_recursive_mutex/fast
+
+#=============================================================================
+# Target rules for targets named 06_timedmutex
+
+# Build rule for target.
+06_timedmutex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 06_timedmutex
+.PHONY : 06_timedmutex
+
+# fast build rule for target.
+06_timedmutex/fast:
+	$(MAKE) -f CMakeFiles/06_timedmutex.dir/build.make CMakeFiles/06_timedmutex.dir/build
+.PHONY : 06_timedmutex/fast
+
+#=============================================================================
+# Target rules for targets named 13_lock
+
+# Build rule for target.
+13_lock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 13_lock
+.PHONY : 13_lock
+
+# fast build rule for target.
+13_lock/fast:
+	$(MAKE) -f CMakeFiles/13_lock.dir/build.make CMakeFiles/13_lock.dir/build
+.PHONY : 13_lock/fast
+
+#=============================================================================
+# Target rules for targets named 05_trylock
+
+# Build rule for target.
+05_trylock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 05_trylock
+.PHONY : 05_trylock
+
+# fast build rule for target.
+05_trylock/fast:
+	$(MAKE) -f CMakeFiles/05_trylock.dir/build.make CMakeFiles/05_trylock.dir/build
+.PHONY : 05_trylock/fast
+
+#=============================================================================
+# Target rules for targets named 09_unique_lock
+
+# Build rule for target.
+09_unique_lock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 09_unique_lock
+.PHONY : 09_unique_lock
+
+# fast build rule for target.
+09_unique_lock/fast:
+	$(MAKE) -f CMakeFiles/09_unique_lock.dir/build.make CMakeFiles/09_unique_lock.dir/build
+.PHONY : 09_unique_lock/fast
+
+#=============================================================================
+# Target rules for targets named 02_joint_and_detach
+
+# Build rule for target.
+02_joint_and_detach: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 02_joint_and_detach
+.PHONY : 02_joint_and_detach
+
+# fast build rule for target.
+02_joint_and_detach/fast:
+	$(MAKE) -f CMakeFiles/02_joint_and_detach.dir/build.make CMakeFiles/02_joint_and_detach.dir/build
+.PHONY : 02_joint_and_detach/fast
+
+#=============================================================================
+# Target rules for targets named 03_mutex
+
+# Build rule for target.
+03_mutex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 03_mutex
+.PHONY : 03_mutex
+
+# fast build rule for target.
+03_mutex/fast:
+	$(MAKE) -f CMakeFiles/03_mutex.dir/build.make CMakeFiles/03_mutex.dir/build
+.PHONY : 03_mutex/fast
+
+#=============================================================================
+# Target rules for targets named 11_deadlock
+
+# Build rule for target.
+11_deadlock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 11_deadlock
+.PHONY : 11_deadlock
+
+# fast build rule for target.
+11_deadlock/fast:
+	$(MAKE) -f CMakeFiles/11_deadlock.dir/build.make CMakeFiles/11_deadlock.dir/build
+.PHONY : 11_deadlock/fast
+
+#=============================================================================
+# Target rules for targets named 12_thread_synchronization
+
+# Build rule for target.
+12_thread_synchronization: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 12_thread_synchronization
+.PHONY : 12_thread_synchronization
+
+# fast build rule for target.
+12_thread_synchronization/fast:
+	$(MAKE) -f CMakeFiles/12_thread_synchronization.dir/build.make CMakeFiles/12_thread_synchronization.dir/build
+.PHONY : 12_thread_synchronization/fast
+
+#=============================================================================
+# Target rules for targets named part1
+
+# Build rule for target.
+part1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part1
+.PHONY : part1
+
+# fast build rule for target.
+part1/fast:
+	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
+.PHONY : part1/fast
+
+#=============================================================================
+# Target rules for targets named part5_uniquelock
+
+# Build rule for target.
+part5_uniquelock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part5_uniquelock
+.PHONY : part5_uniquelock
+
+# fast build rule for target.
+part5_uniquelock/fast:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
+.PHONY : part5_uniquelock/fast
+
+#=============================================================================
+# Target rules for targets named 10_conditional_var
+
+# Build rule for target.
+10_conditional_var: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 10_conditional_var
+.PHONY : 10_conditional_var
+
+# fast build rule for target.
+10_conditional_var/fast:
+	$(MAKE) -f CMakeFiles/10_conditional_var.dir/build.make CMakeFiles/10_conditional_var.dir/build
+.PHONY : 10_conditional_var/fast
+
+#=============================================================================
+# Target rules for targets named part2
+
+# Build rule for target.
+part2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part2
+.PHONY : part2
+
+# fast build rule for target.
+part2/fast:
+	$(MAKE) -f CMakeFiles/part2.dir/build.make CMakeFiles/part2.dir/build
+.PHONY : part2/fast
+
+#=============================================================================
+# Target rules for targets named part6_condition_var
+
+# Build rule for target.
+part6_condition_var: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part6_condition_var
+.PHONY : part6_condition_var
+
+# fast build rule for target.
+part6_condition_var/fast:
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/build
+.PHONY : part6_condition_var/fast
 
 cppnuts/02_joint_and_detach.o: cppnuts/02_joint_and_detach.cpp.o
 
@@ -670,6 +696,60 @@ multithreading/part2.cpp.s:
 	$(MAKE) -f CMakeFiles/part2.dir/build.make CMakeFiles/part2.dir/multithreading/part2.cpp.s
 .PHONY : multithreading/part2.cpp.s
 
+multithreading/part5_uniquelock.o: multithreading/part5_uniquelock.cpp.o
+
+.PHONY : multithreading/part5_uniquelock.o
+
+# target to build an object file
+multithreading/part5_uniquelock.cpp.o:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/multithreading/part5_uniquelock.cpp.o
+.PHONY : multithreading/part5_uniquelock.cpp.o
+
+multithreading/part5_uniquelock.i: multithreading/part5_uniquelock.cpp.i
+
+.PHONY : multithreading/part5_uniquelock.i
+
+# target to preprocess a source file
+multithreading/part5_uniquelock.cpp.i:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/multithreading/part5_uniquelock.cpp.i
+.PHONY : multithreading/part5_uniquelock.cpp.i
+
+multithreading/part5_uniquelock.s: multithreading/part5_uniquelock.cpp.s
+
+.PHONY : multithreading/part5_uniquelock.s
+
+# target to generate assembly for a file
+multithreading/part5_uniquelock.cpp.s:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/multithreading/part5_uniquelock.cpp.s
+.PHONY : multithreading/part5_uniquelock.cpp.s
+
+multithreading/part6_condition_var.o: multithreading/part6_condition_var.cpp.o
+
+.PHONY : multithreading/part6_condition_var.o
+
+# target to build an object file
+multithreading/part6_condition_var.cpp.o:
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/multithreading/part6_condition_var.cpp.o
+.PHONY : multithreading/part6_condition_var.cpp.o
+
+multithreading/part6_condition_var.i: multithreading/part6_condition_var.cpp.i
+
+.PHONY : multithreading/part6_condition_var.i
+
+# target to preprocess a source file
+multithreading/part6_condition_var.cpp.i:
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/multithreading/part6_condition_var.cpp.i
+.PHONY : multithreading/part6_condition_var.cpp.i
+
+multithreading/part6_condition_var.s: multithreading/part6_condition_var.cpp.s
+
+.PHONY : multithreading/part6_condition_var.s
+
+# target to generate assembly for a file
+multithreading/part6_condition_var.cpp.s:
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/multithreading/part6_condition_var.cpp.s
+.PHONY : multithreading/part6_condition_var.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -678,20 +758,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... part1"
-	@echo "... part2"
-	@echo "... 12_thread_synchronization"
-	@echo "... 11_deadlock"
-	@echo "... 10_conditional_var"
-	@echo "... 03_mutex"
-	@echo "... 02_joint_and_detach"
-	@echo "... 09_unique_lock"
-	@echo "... 05_trylock"
-	@echo "... 13_lock"
-	@echo "... 06_timedmutex"
-	@echo "... 07_recursive_mutex"
-	@echo "... 14_hardware_concurrency"
 	@echo "... 08_lock_guard"
+	@echo "... 14_hardware_concurrency"
+	@echo "... 07_recursive_mutex"
+	@echo "... 06_timedmutex"
+	@echo "... 13_lock"
+	@echo "... 05_trylock"
+	@echo "... 09_unique_lock"
+	@echo "... 02_joint_and_detach"
+	@echo "... 03_mutex"
+	@echo "... 11_deadlock"
+	@echo "... 12_thread_synchronization"
+	@echo "... part1"
+	@echo "... part5_uniquelock"
+	@echo "... 10_conditional_var"
+	@echo "... part2"
+	@echo "... part6_condition_var"
 	@echo "... cppnuts/02_joint_and_detach.o"
 	@echo "... cppnuts/02_joint_and_detach.i"
 	@echo "... cppnuts/02_joint_and_detach.s"
@@ -734,6 +816,12 @@ help:
 	@echo "... multithreading/part2.o"
 	@echo "... multithreading/part2.i"
 	@echo "... multithreading/part2.s"
+	@echo "... multithreading/part5_uniquelock.o"
+	@echo "... multithreading/part5_uniquelock.i"
+	@echo "... multithreading/part5_uniquelock.s"
+	@echo "... multithreading/part6_condition_var.o"
+	@echo "... multithreading/part6_condition_var.i"
+	@echo "... multithreading/part6_condition_var.s"
 .PHONY : help
 
 

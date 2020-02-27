@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
-project (algorithm_practice)
+project (learn_concurrency)
 
 #dirctory headers
 #include_directories("include")
@@ -10,7 +10,7 @@ file(GLOB SOURCES "./*/*.cpp")
 
 #compile flags
 set(CMAKE_CXX_FLAGS "-Wall -std=c++11 -g -pedantic")
-SET(CMAKE_CXX_FLAGS -pthread)
+set(CMAKE_CXX_FLAGS -pthread)
 
 foreach( sourcefile ${SOURCES} )
     get_filename_component( demo_name ${sourcefile} NAME_WE )
