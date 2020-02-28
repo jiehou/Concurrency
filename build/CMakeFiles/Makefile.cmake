@@ -42,6 +42,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/part7_future_promise.dir/DependInfo.cmake"
   "CMakeFiles/08_lock_guard.dir/DependInfo.cmake"
   "CMakeFiles/14_hardware_concurrency.dir/DependInfo.cmake"
   "CMakeFiles/07_recursive_mutex.dir/DependInfo.cmake"

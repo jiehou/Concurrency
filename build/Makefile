@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named part7_future_promise
+
+# Build rule for target.
+part7_future_promise: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part7_future_promise
+.PHONY : part7_future_promise
+
+# fast build rule for target.
+part7_future_promise/fast:
+	$(MAKE) -f CMakeFiles/part7_future_promise.dir/build.make CMakeFiles/part7_future_promise.dir/build
+.PHONY : part7_future_promise/fast
+
+#=============================================================================
 # Target rules for targets named 08_lock_guard
 
 # Build rule for target.
@@ -750,6 +763,33 @@ multithreading/part6_condition_var.cpp.s:
 	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/multithreading/part6_condition_var.cpp.s
 .PHONY : multithreading/part6_condition_var.cpp.s
 
+multithreading/part7_future_promise.o: multithreading/part7_future_promise.cpp.o
+
+.PHONY : multithreading/part7_future_promise.o
+
+# target to build an object file
+multithreading/part7_future_promise.cpp.o:
+	$(MAKE) -f CMakeFiles/part7_future_promise.dir/build.make CMakeFiles/part7_future_promise.dir/multithreading/part7_future_promise.cpp.o
+.PHONY : multithreading/part7_future_promise.cpp.o
+
+multithreading/part7_future_promise.i: multithreading/part7_future_promise.cpp.i
+
+.PHONY : multithreading/part7_future_promise.i
+
+# target to preprocess a source file
+multithreading/part7_future_promise.cpp.i:
+	$(MAKE) -f CMakeFiles/part7_future_promise.dir/build.make CMakeFiles/part7_future_promise.dir/multithreading/part7_future_promise.cpp.i
+.PHONY : multithreading/part7_future_promise.cpp.i
+
+multithreading/part7_future_promise.s: multithreading/part7_future_promise.cpp.s
+
+.PHONY : multithreading/part7_future_promise.s
+
+# target to generate assembly for a file
+multithreading/part7_future_promise.cpp.s:
+	$(MAKE) -f CMakeFiles/part7_future_promise.dir/build.make CMakeFiles/part7_future_promise.dir/multithreading/part7_future_promise.cpp.s
+.PHONY : multithreading/part7_future_promise.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -757,6 +797,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... part7_future_promise"
 	@echo "... rebuild_cache"
 	@echo "... 08_lock_guard"
 	@echo "... 14_hardware_concurrency"
@@ -822,6 +863,9 @@ help:
 	@echo "... multithreading/part6_condition_var.o"
 	@echo "... multithreading/part6_condition_var.i"
 	@echo "... multithreading/part6_condition_var.s"
+	@echo "... multithreading/part7_future_promise.o"
+	@echo "... multithreading/part7_future_promise.i"
+	@echo "... multithreading/part7_future_promise.s"
 .PHONY : help
 
 
