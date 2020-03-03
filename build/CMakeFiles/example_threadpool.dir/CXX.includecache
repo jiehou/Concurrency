@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/threadpool/example_threadpool.cpp
+iostream
+-
+vector
+-
+threadpool.hpp
+/home/houje/Study/concurrency/threadpool/threadpool.hpp
+
+/home/houje/Study/concurrency/threadpool/threadpool.hpp
+vector
+-
+queue
+-
+memory
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+future
+-
+functional
+-
+stdexcept
+-
+utility
+-
+

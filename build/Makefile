@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named part8_packaged_task
+
+# Build rule for target.
+part8_packaged_task: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part8_packaged_task
+.PHONY : part8_packaged_task
+
+# fast build rule for target.
+part8_packaged_task/fast:
+	$(MAKE) -f CMakeFiles/part8_packaged_task.dir/build.make CMakeFiles/part8_packaged_task.dir/build
+.PHONY : part8_packaged_task/fast
+
+#=============================================================================
 # Target rules for targets named part7_future_promise
 
 # Build rule for target.
@@ -252,6 +265,19 @@ part7_future_promise/fast:
 11_deadlock/fast:
 	$(MAKE) -f CMakeFiles/11_deadlock.dir/build.make CMakeFiles/11_deadlock.dir/build
 .PHONY : 11_deadlock/fast
+
+#=============================================================================
+# Target rules for targets named example_threadpool
+
+# Build rule for target.
+example_threadpool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 example_threadpool
+.PHONY : example_threadpool
+
+# fast build rule for target.
+example_threadpool/fast:
+	$(MAKE) -f CMakeFiles/example_threadpool.dir/build.make CMakeFiles/example_threadpool.dir/build
+.PHONY : example_threadpool/fast
 
 #=============================================================================
 # Target rules for targets named 12_thread_synchronization
@@ -790,12 +816,67 @@ multithreading/part7_future_promise.cpp.s:
 	$(MAKE) -f CMakeFiles/part7_future_promise.dir/build.make CMakeFiles/part7_future_promise.dir/multithreading/part7_future_promise.cpp.s
 .PHONY : multithreading/part7_future_promise.cpp.s
 
+multithreading/part8_packaged_task.o: multithreading/part8_packaged_task.cpp.o
+
+.PHONY : multithreading/part8_packaged_task.o
+
+# target to build an object file
+multithreading/part8_packaged_task.cpp.o:
+	$(MAKE) -f CMakeFiles/part8_packaged_task.dir/build.make CMakeFiles/part8_packaged_task.dir/multithreading/part8_packaged_task.cpp.o
+.PHONY : multithreading/part8_packaged_task.cpp.o
+
+multithreading/part8_packaged_task.i: multithreading/part8_packaged_task.cpp.i
+
+.PHONY : multithreading/part8_packaged_task.i
+
+# target to preprocess a source file
+multithreading/part8_packaged_task.cpp.i:
+	$(MAKE) -f CMakeFiles/part8_packaged_task.dir/build.make CMakeFiles/part8_packaged_task.dir/multithreading/part8_packaged_task.cpp.i
+.PHONY : multithreading/part8_packaged_task.cpp.i
+
+multithreading/part8_packaged_task.s: multithreading/part8_packaged_task.cpp.s
+
+.PHONY : multithreading/part8_packaged_task.s
+
+# target to generate assembly for a file
+multithreading/part8_packaged_task.cpp.s:
+	$(MAKE) -f CMakeFiles/part8_packaged_task.dir/build.make CMakeFiles/part8_packaged_task.dir/multithreading/part8_packaged_task.cpp.s
+.PHONY : multithreading/part8_packaged_task.cpp.s
+
+threadpool/example_threadpool.o: threadpool/example_threadpool.cpp.o
+
+.PHONY : threadpool/example_threadpool.o
+
+# target to build an object file
+threadpool/example_threadpool.cpp.o:
+	$(MAKE) -f CMakeFiles/example_threadpool.dir/build.make CMakeFiles/example_threadpool.dir/threadpool/example_threadpool.cpp.o
+.PHONY : threadpool/example_threadpool.cpp.o
+
+threadpool/example_threadpool.i: threadpool/example_threadpool.cpp.i
+
+.PHONY : threadpool/example_threadpool.i
+
+# target to preprocess a source file
+threadpool/example_threadpool.cpp.i:
+	$(MAKE) -f CMakeFiles/example_threadpool.dir/build.make CMakeFiles/example_threadpool.dir/threadpool/example_threadpool.cpp.i
+.PHONY : threadpool/example_threadpool.cpp.i
+
+threadpool/example_threadpool.s: threadpool/example_threadpool.cpp.s
+
+.PHONY : threadpool/example_threadpool.s
+
+# target to generate assembly for a file
+threadpool/example_threadpool.cpp.s:
+	$(MAKE) -f CMakeFiles/example_threadpool.dir/build.make CMakeFiles/example_threadpool.dir/threadpool/example_threadpool.cpp.s
+.PHONY : threadpool/example_threadpool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... part8_packaged_task"
 	@echo "... edit_cache"
 	@echo "... part7_future_promise"
 	@echo "... rebuild_cache"
@@ -809,6 +890,7 @@ help:
 	@echo "... 02_joint_and_detach"
 	@echo "... 03_mutex"
 	@echo "... 11_deadlock"
+	@echo "... example_threadpool"
 	@echo "... 12_thread_synchronization"
 	@echo "... part1"
 	@echo "... part5_uniquelock"
@@ -866,6 +948,12 @@ help:
 	@echo "... multithreading/part7_future_promise.o"
 	@echo "... multithreading/part7_future_promise.i"
 	@echo "... multithreading/part7_future_promise.s"
+	@echo "... multithreading/part8_packaged_task.o"
+	@echo "... multithreading/part8_packaged_task.i"
+	@echo "... multithreading/part8_packaged_task.s"
+	@echo "... threadpool/example_threadpool.o"
+	@echo "... threadpool/example_threadpool.i"
+	@echo "... threadpool/example_threadpool.s"
 .PHONY : help
 
 

@@ -42,6 +42,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/part8_packaged_task.dir/DependInfo.cmake"
   "CMakeFiles/part7_future_promise.dir/DependInfo.cmake"
   "CMakeFiles/08_lock_guard.dir/DependInfo.cmake"
   "CMakeFiles/14_hardware_concurrency.dir/DependInfo.cmake"
@@ -53,6 +54,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/02_joint_and_detach.dir/DependInfo.cmake"
   "CMakeFiles/03_mutex.dir/DependInfo.cmake"
   "CMakeFiles/11_deadlock.dir/DependInfo.cmake"
+  "CMakeFiles/example_threadpool.dir/DependInfo.cmake"
   "CMakeFiles/12_thread_synchronization.dir/DependInfo.cmake"
   "CMakeFiles/part1.dir/DependInfo.cmake"
   "CMakeFiles/part5_uniquelock.dir/DependInfo.cmake"
