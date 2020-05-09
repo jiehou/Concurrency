@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/houje/Study/concurrency/build
 CMakeFiles/part8_packaged_task.dir/all:
 	$(MAKE) -f CMakeFiles/part8_packaged_task.dir/build.make CMakeFiles/part8_packaged_task.dir/depend
 	$(MAKE) -f CMakeFiles/part8_packaged_task.dir/build.make CMakeFiles/part8_packaged_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=37,38 "Built target part8_packaged_task"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=39,40 "Built target part8_packaged_task"
 .PHONY : CMakeFiles/part8_packaged_task.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/part8_packaged_task.dir/clean
 CMakeFiles/part7_future_promise.dir/all:
 	$(MAKE) -f CMakeFiles/part7_future_promise.dir/build.make CMakeFiles/part7_future_promise.dir/depend
 	$(MAKE) -f CMakeFiles/part7_future_promise.dir/build.make CMakeFiles/part7_future_promise.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=35,36 "Built target part7_future_promise"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=37,38 "Built target part7_future_promise"
 .PHONY : CMakeFiles/part7_future_promise.dir/all
 
 # Include target in all.
@@ -578,76 +578,39 @@ clean: CMakeFiles/12_thread_synchronization.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/part1.dir
+# Target rules for target CMakeFiles/part6_condition_var.dir
 
 # All Build rule for target.
-CMakeFiles/part1.dir/all:
-	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/depend
-	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=27,28 "Built target part1"
-.PHONY : CMakeFiles/part1.dir/all
+CMakeFiles/part6_condition_var.dir/all:
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/depend
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=35,36 "Built target part6_condition_var"
+.PHONY : CMakeFiles/part6_condition_var.dir/all
 
 # Include target in all.
-all: CMakeFiles/part1.dir/all
+all: CMakeFiles/part6_condition_var.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/part1.dir/rule: cmake_check_build_system
+CMakeFiles/part6_condition_var.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/part1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/part6_condition_var.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 0
-.PHONY : CMakeFiles/part1.dir/rule
+.PHONY : CMakeFiles/part6_condition_var.dir/rule
 
 # Convenience name for target.
-part1: CMakeFiles/part1.dir/rule
+part6_condition_var: CMakeFiles/part6_condition_var.dir/rule
 
-.PHONY : part1
-
-# clean rule for target.
-CMakeFiles/part1.dir/clean:
-	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/clean
-.PHONY : CMakeFiles/part1.dir/clean
+.PHONY : part6_condition_var
 
 # clean rule for target.
-clean: CMakeFiles/part1.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/part5_uniquelock.dir
-
-# All Build rule for target.
-CMakeFiles/part5_uniquelock.dir/all:
-	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/depend
-	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=31,32 "Built target part5_uniquelock"
-.PHONY : CMakeFiles/part5_uniquelock.dir/all
-
-# Include target in all.
-all: CMakeFiles/part5_uniquelock.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/part5_uniquelock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/part5_uniquelock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 0
-.PHONY : CMakeFiles/part5_uniquelock.dir/rule
-
-# Convenience name for target.
-part5_uniquelock: CMakeFiles/part5_uniquelock.dir/rule
-
-.PHONY : part5_uniquelock
+CMakeFiles/part6_condition_var.dir/clean:
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/clean
+.PHONY : CMakeFiles/part6_condition_var.dir/clean
 
 # clean rule for target.
-CMakeFiles/part5_uniquelock.dir/clean:
-	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/clean
-.PHONY : CMakeFiles/part5_uniquelock.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/part5_uniquelock.dir/clean
+clean: CMakeFiles/part6_condition_var.dir/clean
 
 .PHONY : clean
 
@@ -726,39 +689,113 @@ clean: CMakeFiles/part2.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/part6_condition_var.dir
+# Target rules for target CMakeFiles/part1.dir
 
 # All Build rule for target.
-CMakeFiles/part6_condition_var.dir/all:
-	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/depend
-	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=33,34 "Built target part6_condition_var"
-.PHONY : CMakeFiles/part6_condition_var.dir/all
+CMakeFiles/part1.dir/all:
+	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/depend
+	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=27,28 "Built target part1"
+.PHONY : CMakeFiles/part1.dir/all
 
 # Include target in all.
-all: CMakeFiles/part6_condition_var.dir/all
+all: CMakeFiles/part1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/part6_condition_var.dir/rule: cmake_check_build_system
+CMakeFiles/part1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/part6_condition_var.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/part1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 0
-.PHONY : CMakeFiles/part6_condition_var.dir/rule
+.PHONY : CMakeFiles/part1.dir/rule
 
 # Convenience name for target.
-part6_condition_var: CMakeFiles/part6_condition_var.dir/rule
+part1: CMakeFiles/part1.dir/rule
 
-.PHONY : part6_condition_var
-
-# clean rule for target.
-CMakeFiles/part6_condition_var.dir/clean:
-	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/clean
-.PHONY : CMakeFiles/part6_condition_var.dir/clean
+.PHONY : part1
 
 # clean rule for target.
-clean: CMakeFiles/part6_condition_var.dir/clean
+CMakeFiles/part1.dir/clean:
+	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/clean
+.PHONY : CMakeFiles/part1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/part1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/part3_datarace_and_mutex.dir
+
+# All Build rule for target.
+CMakeFiles/part3_datarace_and_mutex.dir/all:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/depend
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=31,32 "Built target part3_datarace_and_mutex"
+.PHONY : CMakeFiles/part3_datarace_and_mutex.dir/all
+
+# Include target in all.
+all: CMakeFiles/part3_datarace_and_mutex.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/part3_datarace_and_mutex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/part3_datarace_and_mutex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 0
+.PHONY : CMakeFiles/part3_datarace_and_mutex.dir/rule
+
+# Convenience name for target.
+part3_datarace_and_mutex: CMakeFiles/part3_datarace_and_mutex.dir/rule
+
+.PHONY : part3_datarace_and_mutex
+
+# clean rule for target.
+CMakeFiles/part3_datarace_and_mutex.dir/clean:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/clean
+.PHONY : CMakeFiles/part3_datarace_and_mutex.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/part3_datarace_and_mutex.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/part5_uniquelock.dir
+
+# All Build rule for target.
+CMakeFiles/part5_uniquelock.dir/all:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/depend
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/houje/Study/concurrency/build/CMakeFiles --progress-num=33,34 "Built target part5_uniquelock"
+.PHONY : CMakeFiles/part5_uniquelock.dir/all
+
+# Include target in all.
+all: CMakeFiles/part5_uniquelock.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/part5_uniquelock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/part5_uniquelock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/houje/Study/concurrency/build/CMakeFiles 0
+.PHONY : CMakeFiles/part5_uniquelock.dir/rule
+
+# Convenience name for target.
+part5_uniquelock: CMakeFiles/part5_uniquelock.dir/rule
+
+.PHONY : part5_uniquelock
+
+# clean rule for target.
+CMakeFiles/part5_uniquelock.dir/clean:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/clean
+.PHONY : CMakeFiles/part5_uniquelock.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/part5_uniquelock.dir/clean
 
 .PHONY : clean
 

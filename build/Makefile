@@ -293,30 +293,17 @@ example_threadpool/fast:
 .PHONY : 12_thread_synchronization/fast
 
 #=============================================================================
-# Target rules for targets named part1
+# Target rules for targets named part6_condition_var
 
 # Build rule for target.
-part1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part1
-.PHONY : part1
+part6_condition_var: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part6_condition_var
+.PHONY : part6_condition_var
 
 # fast build rule for target.
-part1/fast:
-	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
-.PHONY : part1/fast
-
-#=============================================================================
-# Target rules for targets named part5_uniquelock
-
-# Build rule for target.
-part5_uniquelock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part5_uniquelock
-.PHONY : part5_uniquelock
-
-# fast build rule for target.
-part5_uniquelock/fast:
-	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
-.PHONY : part5_uniquelock/fast
+part6_condition_var/fast:
+	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/build
+.PHONY : part6_condition_var/fast
 
 #=============================================================================
 # Target rules for targets named 10_conditional_var
@@ -345,17 +332,43 @@ part2/fast:
 .PHONY : part2/fast
 
 #=============================================================================
-# Target rules for targets named part6_condition_var
+# Target rules for targets named part1
 
 # Build rule for target.
-part6_condition_var: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part6_condition_var
-.PHONY : part6_condition_var
+part1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part1
+.PHONY : part1
 
 # fast build rule for target.
-part6_condition_var/fast:
-	$(MAKE) -f CMakeFiles/part6_condition_var.dir/build.make CMakeFiles/part6_condition_var.dir/build
-.PHONY : part6_condition_var/fast
+part1/fast:
+	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
+.PHONY : part1/fast
+
+#=============================================================================
+# Target rules for targets named part3_datarace_and_mutex
+
+# Build rule for target.
+part3_datarace_and_mutex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part3_datarace_and_mutex
+.PHONY : part3_datarace_and_mutex
+
+# fast build rule for target.
+part3_datarace_and_mutex/fast:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/build
+.PHONY : part3_datarace_and_mutex/fast
+
+#=============================================================================
+# Target rules for targets named part5_uniquelock
+
+# Build rule for target.
+part5_uniquelock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part5_uniquelock
+.PHONY : part5_uniquelock
+
+# fast build rule for target.
+part5_uniquelock/fast:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
+.PHONY : part5_uniquelock/fast
 
 cppnuts/02_joint_and_detach.o: cppnuts/02_joint_and_detach.cpp.o
 
@@ -735,6 +748,33 @@ multithreading/part2.cpp.s:
 	$(MAKE) -f CMakeFiles/part2.dir/build.make CMakeFiles/part2.dir/multithreading/part2.cpp.s
 .PHONY : multithreading/part2.cpp.s
 
+multithreading/part3_datarace_and_mutex.o: multithreading/part3_datarace_and_mutex.cpp.o
+
+.PHONY : multithreading/part3_datarace_and_mutex.o
+
+# target to build an object file
+multithreading/part3_datarace_and_mutex.cpp.o:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/multithreading/part3_datarace_and_mutex.cpp.o
+.PHONY : multithreading/part3_datarace_and_mutex.cpp.o
+
+multithreading/part3_datarace_and_mutex.i: multithreading/part3_datarace_and_mutex.cpp.i
+
+.PHONY : multithreading/part3_datarace_and_mutex.i
+
+# target to preprocess a source file
+multithreading/part3_datarace_and_mutex.cpp.i:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/multithreading/part3_datarace_and_mutex.cpp.i
+.PHONY : multithreading/part3_datarace_and_mutex.cpp.i
+
+multithreading/part3_datarace_and_mutex.s: multithreading/part3_datarace_and_mutex.cpp.s
+
+.PHONY : multithreading/part3_datarace_and_mutex.s
+
+# target to generate assembly for a file
+multithreading/part3_datarace_and_mutex.cpp.s:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/multithreading/part3_datarace_and_mutex.cpp.s
+.PHONY : multithreading/part3_datarace_and_mutex.cpp.s
+
 multithreading/part5_uniquelock.o: multithreading/part5_uniquelock.cpp.o
 
 .PHONY : multithreading/part5_uniquelock.o
@@ -892,11 +932,12 @@ help:
 	@echo "... 11_deadlock"
 	@echo "... example_threadpool"
 	@echo "... 12_thread_synchronization"
-	@echo "... part1"
-	@echo "... part5_uniquelock"
+	@echo "... part6_condition_var"
 	@echo "... 10_conditional_var"
 	@echo "... part2"
-	@echo "... part6_condition_var"
+	@echo "... part1"
+	@echo "... part3_datarace_and_mutex"
+	@echo "... part5_uniquelock"
 	@echo "... cppnuts/02_joint_and_detach.o"
 	@echo "... cppnuts/02_joint_and_detach.i"
 	@echo "... cppnuts/02_joint_and_detach.s"
@@ -939,6 +980,9 @@ help:
 	@echo "... multithreading/part2.o"
 	@echo "... multithreading/part2.i"
 	@echo "... multithreading/part2.s"
+	@echo "... multithreading/part3_datarace_and_mutex.o"
+	@echo "... multithreading/part3_datarace_and_mutex.i"
+	@echo "... multithreading/part3_datarace_and_mutex.s"
 	@echo "... multithreading/part5_uniquelock.o"
 	@echo "... multithreading/part5_uniquelock.i"
 	@echo "... multithreading/part5_uniquelock.s"

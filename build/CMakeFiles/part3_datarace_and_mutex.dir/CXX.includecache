@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/houje/Study/concurrency/multithreading/part1.cpp
+/home/houje/Study/concurrency/multithreading/part3_datarace_and_mutex.cpp
 iostream
--
-thread
--
-string
--
-memory
 -
 
