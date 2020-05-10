@@ -51,6 +51,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/13_lock.dir/DependInfo.cmake"
   "CMakeFiles/05_trylock.dir/DependInfo.cmake"
   "CMakeFiles/09_unique_lock.dir/DependInfo.cmake"
+  "CMakeFiles/part5_uniquelock.dir/DependInfo.cmake"
+  "CMakeFiles/part3_datarace_and_mutex.dir/DependInfo.cmake"
   "CMakeFiles/02_join_and_detach.dir/DependInfo.cmake"
   "CMakeFiles/03_mutex.dir/DependInfo.cmake"
   "CMakeFiles/11_deadlock.dir/DependInfo.cmake"
@@ -59,7 +61,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/part6_condition_var.dir/DependInfo.cmake"
   "CMakeFiles/10_conditional_var.dir/DependInfo.cmake"
   "CMakeFiles/part2.dir/DependInfo.cmake"
+  "CMakeFiles/part3_mutex2.dir/DependInfo.cmake"
   "CMakeFiles/part1.dir/DependInfo.cmake"
-  "CMakeFiles/part3_datarace_and_mutex.dir/DependInfo.cmake"
-  "CMakeFiles/part5_uniquelock.dir/DependInfo.cmake"
   )

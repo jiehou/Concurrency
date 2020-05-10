@@ -228,6 +228,32 @@ part7_future_promise/fast:
 .PHONY : 09_unique_lock/fast
 
 #=============================================================================
+# Target rules for targets named part5_uniquelock
+
+# Build rule for target.
+part5_uniquelock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part5_uniquelock
+.PHONY : part5_uniquelock
+
+# fast build rule for target.
+part5_uniquelock/fast:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
+.PHONY : part5_uniquelock/fast
+
+#=============================================================================
+# Target rules for targets named part3_datarace_and_mutex
+
+# Build rule for target.
+part3_datarace_and_mutex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part3_datarace_and_mutex
+.PHONY : part3_datarace_and_mutex
+
+# fast build rule for target.
+part3_datarace_and_mutex/fast:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/build
+.PHONY : part3_datarace_and_mutex/fast
+
+#=============================================================================
 # Target rules for targets named 02_join_and_detach
 
 # Build rule for target.
@@ -332,6 +358,19 @@ part2/fast:
 .PHONY : part2/fast
 
 #=============================================================================
+# Target rules for targets named part3_mutex2
+
+# Build rule for target.
+part3_mutex2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part3_mutex2
+.PHONY : part3_mutex2
+
+# fast build rule for target.
+part3_mutex2/fast:
+	$(MAKE) -f CMakeFiles/part3_mutex2.dir/build.make CMakeFiles/part3_mutex2.dir/build
+.PHONY : part3_mutex2/fast
+
+#=============================================================================
 # Target rules for targets named part1
 
 # Build rule for target.
@@ -343,32 +382,6 @@ part1: cmake_check_build_system
 part1/fast:
 	$(MAKE) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
 .PHONY : part1/fast
-
-#=============================================================================
-# Target rules for targets named part3_datarace_and_mutex
-
-# Build rule for target.
-part3_datarace_and_mutex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part3_datarace_and_mutex
-.PHONY : part3_datarace_and_mutex
-
-# fast build rule for target.
-part3_datarace_and_mutex/fast:
-	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/build
-.PHONY : part3_datarace_and_mutex/fast
-
-#=============================================================================
-# Target rules for targets named part5_uniquelock
-
-# Build rule for target.
-part5_uniquelock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part5_uniquelock
-.PHONY : part5_uniquelock
-
-# fast build rule for target.
-part5_uniquelock/fast:
-	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
-.PHONY : part5_uniquelock/fast
 
 cppnuts/02_join_and_detach.o: cppnuts/02_join_and_detach.cpp.o
 
@@ -775,6 +788,33 @@ multithreading/part3_datarace_and_mutex.cpp.s:
 	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/multithreading/part3_datarace_and_mutex.cpp.s
 .PHONY : multithreading/part3_datarace_and_mutex.cpp.s
 
+multithreading/part3_mutex2.o: multithreading/part3_mutex2.cpp.o
+
+.PHONY : multithreading/part3_mutex2.o
+
+# target to build an object file
+multithreading/part3_mutex2.cpp.o:
+	$(MAKE) -f CMakeFiles/part3_mutex2.dir/build.make CMakeFiles/part3_mutex2.dir/multithreading/part3_mutex2.cpp.o
+.PHONY : multithreading/part3_mutex2.cpp.o
+
+multithreading/part3_mutex2.i: multithreading/part3_mutex2.cpp.i
+
+.PHONY : multithreading/part3_mutex2.i
+
+# target to preprocess a source file
+multithreading/part3_mutex2.cpp.i:
+	$(MAKE) -f CMakeFiles/part3_mutex2.dir/build.make CMakeFiles/part3_mutex2.dir/multithreading/part3_mutex2.cpp.i
+.PHONY : multithreading/part3_mutex2.cpp.i
+
+multithreading/part3_mutex2.s: multithreading/part3_mutex2.cpp.s
+
+.PHONY : multithreading/part3_mutex2.s
+
+# target to generate assembly for a file
+multithreading/part3_mutex2.cpp.s:
+	$(MAKE) -f CMakeFiles/part3_mutex2.dir/build.make CMakeFiles/part3_mutex2.dir/multithreading/part3_mutex2.cpp.s
+.PHONY : multithreading/part3_mutex2.cpp.s
+
 multithreading/part5_uniquelock.o: multithreading/part5_uniquelock.cpp.o
 
 .PHONY : multithreading/part5_uniquelock.o
@@ -927,6 +967,8 @@ help:
 	@echo "... 13_lock"
 	@echo "... 05_trylock"
 	@echo "... 09_unique_lock"
+	@echo "... part5_uniquelock"
+	@echo "... part3_datarace_and_mutex"
 	@echo "... 02_join_and_detach"
 	@echo "... 03_mutex"
 	@echo "... 11_deadlock"
@@ -935,9 +977,8 @@ help:
 	@echo "... part6_condition_var"
 	@echo "... 10_conditional_var"
 	@echo "... part2"
+	@echo "... part3_mutex2"
 	@echo "... part1"
-	@echo "... part3_datarace_and_mutex"
-	@echo "... part5_uniquelock"
 	@echo "... cppnuts/02_join_and_detach.o"
 	@echo "... cppnuts/02_join_and_detach.i"
 	@echo "... cppnuts/02_join_and_detach.s"
@@ -983,6 +1024,9 @@ help:
 	@echo "... multithreading/part3_datarace_and_mutex.o"
 	@echo "... multithreading/part3_datarace_and_mutex.i"
 	@echo "... multithreading/part3_datarace_and_mutex.s"
+	@echo "... multithreading/part3_mutex2.o"
+	@echo "... multithreading/part3_mutex2.i"
+	@echo "... multithreading/part3_mutex2.s"
 	@echo "... multithreading/part5_uniquelock.o"
 	@echo "... multithreading/part5_uniquelock.i"
 	@echo "... multithreading/part5_uniquelock.s"
