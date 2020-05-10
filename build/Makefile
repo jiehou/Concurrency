@@ -228,17 +228,17 @@ part7_future_promise/fast:
 .PHONY : 09_unique_lock/fast
 
 #=============================================================================
-# Target rules for targets named 02_joint_and_detach
+# Target rules for targets named 02_join_and_detach
 
 # Build rule for target.
-02_joint_and_detach: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 02_joint_and_detach
-.PHONY : 02_joint_and_detach
+02_join_and_detach: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 02_join_and_detach
+.PHONY : 02_join_and_detach
 
 # fast build rule for target.
-02_joint_and_detach/fast:
-	$(MAKE) -f CMakeFiles/02_joint_and_detach.dir/build.make CMakeFiles/02_joint_and_detach.dir/build
-.PHONY : 02_joint_and_detach/fast
+02_join_and_detach/fast:
+	$(MAKE) -f CMakeFiles/02_join_and_detach.dir/build.make CMakeFiles/02_join_and_detach.dir/build
+.PHONY : 02_join_and_detach/fast
 
 #=============================================================================
 # Target rules for targets named 03_mutex
@@ -370,32 +370,32 @@ part5_uniquelock/fast:
 	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
 .PHONY : part5_uniquelock/fast
 
-cppnuts/02_joint_and_detach.o: cppnuts/02_joint_and_detach.cpp.o
+cppnuts/02_join_and_detach.o: cppnuts/02_join_and_detach.cpp.o
 
-.PHONY : cppnuts/02_joint_and_detach.o
+.PHONY : cppnuts/02_join_and_detach.o
 
 # target to build an object file
-cppnuts/02_joint_and_detach.cpp.o:
-	$(MAKE) -f CMakeFiles/02_joint_and_detach.dir/build.make CMakeFiles/02_joint_and_detach.dir/cppnuts/02_joint_and_detach.cpp.o
-.PHONY : cppnuts/02_joint_and_detach.cpp.o
+cppnuts/02_join_and_detach.cpp.o:
+	$(MAKE) -f CMakeFiles/02_join_and_detach.dir/build.make CMakeFiles/02_join_and_detach.dir/cppnuts/02_join_and_detach.cpp.o
+.PHONY : cppnuts/02_join_and_detach.cpp.o
 
-cppnuts/02_joint_and_detach.i: cppnuts/02_joint_and_detach.cpp.i
+cppnuts/02_join_and_detach.i: cppnuts/02_join_and_detach.cpp.i
 
-.PHONY : cppnuts/02_joint_and_detach.i
+.PHONY : cppnuts/02_join_and_detach.i
 
 # target to preprocess a source file
-cppnuts/02_joint_and_detach.cpp.i:
-	$(MAKE) -f CMakeFiles/02_joint_and_detach.dir/build.make CMakeFiles/02_joint_and_detach.dir/cppnuts/02_joint_and_detach.cpp.i
-.PHONY : cppnuts/02_joint_and_detach.cpp.i
+cppnuts/02_join_and_detach.cpp.i:
+	$(MAKE) -f CMakeFiles/02_join_and_detach.dir/build.make CMakeFiles/02_join_and_detach.dir/cppnuts/02_join_and_detach.cpp.i
+.PHONY : cppnuts/02_join_and_detach.cpp.i
 
-cppnuts/02_joint_and_detach.s: cppnuts/02_joint_and_detach.cpp.s
+cppnuts/02_join_and_detach.s: cppnuts/02_join_and_detach.cpp.s
 
-.PHONY : cppnuts/02_joint_and_detach.s
+.PHONY : cppnuts/02_join_and_detach.s
 
 # target to generate assembly for a file
-cppnuts/02_joint_and_detach.cpp.s:
-	$(MAKE) -f CMakeFiles/02_joint_and_detach.dir/build.make CMakeFiles/02_joint_and_detach.dir/cppnuts/02_joint_and_detach.cpp.s
-.PHONY : cppnuts/02_joint_and_detach.cpp.s
+cppnuts/02_join_and_detach.cpp.s:
+	$(MAKE) -f CMakeFiles/02_join_and_detach.dir/build.make CMakeFiles/02_join_and_detach.dir/cppnuts/02_join_and_detach.cpp.s
+.PHONY : cppnuts/02_join_and_detach.cpp.s
 
 cppnuts/03_mutex.o: cppnuts/03_mutex.cpp.o
 
@@ -927,7 +927,7 @@ help:
 	@echo "... 13_lock"
 	@echo "... 05_trylock"
 	@echo "... 09_unique_lock"
-	@echo "... 02_joint_and_detach"
+	@echo "... 02_join_and_detach"
 	@echo "... 03_mutex"
 	@echo "... 11_deadlock"
 	@echo "... example_threadpool"
@@ -938,9 +938,9 @@ help:
 	@echo "... part1"
 	@echo "... part3_datarace_and_mutex"
 	@echo "... part5_uniquelock"
-	@echo "... cppnuts/02_joint_and_detach.o"
-	@echo "... cppnuts/02_joint_and_detach.i"
-	@echo "... cppnuts/02_joint_and_detach.s"
+	@echo "... cppnuts/02_join_and_detach.o"
+	@echo "... cppnuts/02_join_and_detach.i"
+	@echo "... cppnuts/02_join_and_detach.s"
 	@echo "... cppnuts/03_mutex.o"
 	@echo "... cppnuts/03_mutex.i"
 	@echo "... cppnuts/03_mutex.s"

@@ -36,3 +36,11 @@ int main() {
     t2.join();
     return 0;
 }
+
+/* Short notes
+* 1) use move to transfer the ownership of thread
+* 2) if(t1.joinable()) t1.join();
+* 3) get the actual number of threads that the deployed hardware supports: 
+     thread::hardware_concurrency();
+* 4) std::ref: for some function that has reference parameter
+*/

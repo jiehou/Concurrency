@@ -6,3 +6,11 @@
 
 #IncludeRegexTransform: 
 
+/home/houje/Study/concurrency/cppnuts/02_join_and_detach.cpp
+iostream
+-
+chrono
+-
+thread
+-
+

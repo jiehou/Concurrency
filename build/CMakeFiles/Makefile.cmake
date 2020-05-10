@@ -51,7 +51,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/13_lock.dir/DependInfo.cmake"
   "CMakeFiles/05_trylock.dir/DependInfo.cmake"
   "CMakeFiles/09_unique_lock.dir/DependInfo.cmake"
-  "CMakeFiles/02_joint_and_detach.dir/DependInfo.cmake"
+  "CMakeFiles/02_join_and_detach.dir/DependInfo.cmake"
   "CMakeFiles/03_mutex.dir/DependInfo.cmake"
   "CMakeFiles/11_deadlock.dir/DependInfo.cmake"
   "CMakeFiles/example_threadpool.dir/DependInfo.cmake"
