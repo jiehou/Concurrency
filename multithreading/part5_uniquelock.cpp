@@ -29,6 +29,8 @@ public:
     void sharedPrint(const string& msg, int number) {
         if(!fout_.is_open()) {
             call_once(open_flag_, [&]() { fout_.open("log.txt"); });
+            // NOTE: [=] captures all variables by value
+            // [&] captures all variables by reference 
         }
         unique_lock<mutex> mlock(mu_, defer_lock);
         mlock.lock();

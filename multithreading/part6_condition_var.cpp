@@ -62,7 +62,7 @@ void func2_cond() {
     int data = -1;
     while(data != 1) {
         unique_lock<mutex> mlock(mu);
-        cond.wait(mlock); // once producer produces sth, consumer is waked up
+        cond.wait(mlock, []() { return !q.empty(); }); // once producer produces sth, consumer is waked up
         data = q.front();
         q.pop();
         mlock.unlock();

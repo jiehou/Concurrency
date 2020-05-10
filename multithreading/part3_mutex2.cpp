@@ -6,6 +6,16 @@
 #include <memory>
 using namespace std;
 
+/* Note:
+* 0) mutex, lock_guar
+* 1) use mutex to synchronize data cess
+* 2) never leak a a handle of data to outside
+* e.g. never retrun fout_ to the outside world e.g. ofstream& GetStream() { return fout_; }
+* e.g. never pass fout_ as an argument to 
+    user provided function void ProcessFile(void fun(ofstream&)) { fun(fout_); }
+* 3) desing interface appropriately e.g. a thread-safe stack
+*/
+
 class LogFile {
 public:
     LogFile(const string& fname) {
