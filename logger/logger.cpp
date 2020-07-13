@@ -26,6 +26,7 @@ void Logger::Log(const string& entry) {
     cv_.notify_all(); // notify condition variable to wake up thread
 }
 
+/*
 void Logger::ProcessEntries_() {
     ofstream ofs("log.txt");
     if(ofs.fail()) {
@@ -56,4 +57,22 @@ void Logger::ProcessEntries_() {
             break;
         }
     }// outer while
+}
+*/
+
+void Logger::ProcessEntries_() {
+    ofstream ofs("log.txt");
+    if(ofs.fail()) {
+        cerr << "Failed to open logfile\n";
+        return;
+    }
+    for(;;) {
+        unique_lock<mutex> mlock(mtx_);
+        cv_.wait(mlock, [this] { return this->stop_ || !this->q_.empty();}); //[this] { return this->stop_ || !this->q_.empty();}
+        if(stop_ && q_.empty()) return;
+        if(!q_.empty()) {
+            ofs << q_.front() << endl;
+            q_.pop();
+        }
+    }
 }
