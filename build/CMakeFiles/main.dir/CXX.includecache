@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/logger/logger.h
+queue
+-
+string
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+
+/home/houje/Study/concurrency/logger/main.cpp
+iostream
+-
+sstream
+-
+logger.h
+/home/houje/Study/concurrency/logger/logger.h
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/houje/Study/concurrency/multithreading/part9_packaged_task1.cpp
+iostream
+-
+future
+-
+mutex
+-
+condition_variable
+-
+functional
+-
+cmath
+-
+

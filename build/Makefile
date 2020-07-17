@@ -137,6 +137,45 @@ part7_future_promise/fast:
 .PHONY : part7_future_promise/fast
 
 #=============================================================================
+# Target rules for targets named part3_mutex2
+
+# Build rule for target.
+part3_mutex2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part3_mutex2
+.PHONY : part3_mutex2
+
+# fast build rule for target.
+part3_mutex2/fast:
+	$(MAKE) -f CMakeFiles/part3_mutex2.dir/build.make CMakeFiles/part3_mutex2.dir/build
+.PHONY : part3_mutex2/fast
+
+#=============================================================================
+# Target rules for targets named part5_uniquelock
+
+# Build rule for target.
+part5_uniquelock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part5_uniquelock
+.PHONY : part5_uniquelock
+
+# fast build rule for target.
+part5_uniquelock/fast:
+	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
+.PHONY : part5_uniquelock/fast
+
+#=============================================================================
+# Target rules for targets named part3_datarace_and_mutex
+
+# Build rule for target.
+part3_datarace_and_mutex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part3_datarace_and_mutex
+.PHONY : part3_datarace_and_mutex
+
+# fast build rule for target.
+part3_datarace_and_mutex/fast:
+	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/build
+.PHONY : part3_datarace_and_mutex/fast
+
+#=============================================================================
 # Target rules for targets named 08_lock_guard
 
 # Build rule for target.
@@ -213,45 +252,6 @@ part7_future_promise/fast:
 05_trylock/fast:
 	$(MAKE) -f CMakeFiles/05_trylock.dir/build.make CMakeFiles/05_trylock.dir/build
 .PHONY : 05_trylock/fast
-
-#=============================================================================
-# Target rules for targets named 09_unique_lock
-
-# Build rule for target.
-09_unique_lock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 09_unique_lock
-.PHONY : 09_unique_lock
-
-# fast build rule for target.
-09_unique_lock/fast:
-	$(MAKE) -f CMakeFiles/09_unique_lock.dir/build.make CMakeFiles/09_unique_lock.dir/build
-.PHONY : 09_unique_lock/fast
-
-#=============================================================================
-# Target rules for targets named part5_uniquelock
-
-# Build rule for target.
-part5_uniquelock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part5_uniquelock
-.PHONY : part5_uniquelock
-
-# fast build rule for target.
-part5_uniquelock/fast:
-	$(MAKE) -f CMakeFiles/part5_uniquelock.dir/build.make CMakeFiles/part5_uniquelock.dir/build
-.PHONY : part5_uniquelock/fast
-
-#=============================================================================
-# Target rules for targets named part3_datarace_and_mutex
-
-# Build rule for target.
-part3_datarace_and_mutex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part3_datarace_and_mutex
-.PHONY : part3_datarace_and_mutex
-
-# fast build rule for target.
-part3_datarace_and_mutex/fast:
-	$(MAKE) -f CMakeFiles/part3_datarace_and_mutex.dir/build.make CMakeFiles/part3_datarace_and_mutex.dir/build
-.PHONY : part3_datarace_and_mutex/fast
 
 #=============================================================================
 # Target rules for targets named 02_join_and_detach
@@ -358,17 +358,56 @@ part2/fast:
 .PHONY : part2/fast
 
 #=============================================================================
-# Target rules for targets named part3_mutex2
+# Target rules for targets named part9_packaged_task1
 
 # Build rule for target.
-part3_mutex2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 part3_mutex2
-.PHONY : part3_mutex2
+part9_packaged_task1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part9_packaged_task1
+.PHONY : part9_packaged_task1
 
 # fast build rule for target.
-part3_mutex2/fast:
-	$(MAKE) -f CMakeFiles/part3_mutex2.dir/build.make CMakeFiles/part3_mutex2.dir/build
-.PHONY : part3_mutex2/fast
+part9_packaged_task1/fast:
+	$(MAKE) -f CMakeFiles/part9_packaged_task1.dir/build.make CMakeFiles/part9_packaged_task1.dir/build
+.PHONY : part9_packaged_task1/fast
+
+#=============================================================================
+# Target rules for targets named 09_unique_lock
+
+# Build rule for target.
+09_unique_lock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 09_unique_lock
+.PHONY : 09_unique_lock
+
+# fast build rule for target.
+09_unique_lock/fast:
+	$(MAKE) -f CMakeFiles/09_unique_lock.dir/build.make CMakeFiles/09_unique_lock.dir/build
+.PHONY : 09_unique_lock/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named logger
+
+# Build rule for target.
+logger: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 logger
+.PHONY : logger
+
+# fast build rule for target.
+logger/fast:
+	$(MAKE) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/build
+.PHONY : logger/fast
 
 #=============================================================================
 # Target rules for targets named part1
@@ -707,6 +746,60 @@ cppnuts/14_hardware_concurrency.cpp.s:
 	$(MAKE) -f CMakeFiles/14_hardware_concurrency.dir/build.make CMakeFiles/14_hardware_concurrency.dir/cppnuts/14_hardware_concurrency.cpp.s
 .PHONY : cppnuts/14_hardware_concurrency.cpp.s
 
+logger/logger.o: logger/logger.cpp.o
+
+.PHONY : logger/logger.o
+
+# target to build an object file
+logger/logger.cpp.o:
+	$(MAKE) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/logger/logger.cpp.o
+.PHONY : logger/logger.cpp.o
+
+logger/logger.i: logger/logger.cpp.i
+
+.PHONY : logger/logger.i
+
+# target to preprocess a source file
+logger/logger.cpp.i:
+	$(MAKE) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/logger/logger.cpp.i
+.PHONY : logger/logger.cpp.i
+
+logger/logger.s: logger/logger.cpp.s
+
+.PHONY : logger/logger.s
+
+# target to generate assembly for a file
+logger/logger.cpp.s:
+	$(MAKE) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/logger/logger.cpp.s
+.PHONY : logger/logger.cpp.s
+
+logger/main.o: logger/main.cpp.o
+
+.PHONY : logger/main.o
+
+# target to build an object file
+logger/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/logger/main.cpp.o
+.PHONY : logger/main.cpp.o
+
+logger/main.i: logger/main.cpp.i
+
+.PHONY : logger/main.i
+
+# target to preprocess a source file
+logger/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/logger/main.cpp.i
+.PHONY : logger/main.cpp.i
+
+logger/main.s: logger/main.cpp.s
+
+.PHONY : logger/main.s
+
+# target to generate assembly for a file
+logger/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/logger/main.cpp.s
+.PHONY : logger/main.cpp.s
+
 multithreading/part1.o: multithreading/part1.cpp.o
 
 .PHONY : multithreading/part1.o
@@ -923,6 +1016,33 @@ multithreading/part8_packaged_task.cpp.s:
 	$(MAKE) -f CMakeFiles/part8_packaged_task.dir/build.make CMakeFiles/part8_packaged_task.dir/multithreading/part8_packaged_task.cpp.s
 .PHONY : multithreading/part8_packaged_task.cpp.s
 
+multithreading/part9_packaged_task1.o: multithreading/part9_packaged_task1.cpp.o
+
+.PHONY : multithreading/part9_packaged_task1.o
+
+# target to build an object file
+multithreading/part9_packaged_task1.cpp.o:
+	$(MAKE) -f CMakeFiles/part9_packaged_task1.dir/build.make CMakeFiles/part9_packaged_task1.dir/multithreading/part9_packaged_task1.cpp.o
+.PHONY : multithreading/part9_packaged_task1.cpp.o
+
+multithreading/part9_packaged_task1.i: multithreading/part9_packaged_task1.cpp.i
+
+.PHONY : multithreading/part9_packaged_task1.i
+
+# target to preprocess a source file
+multithreading/part9_packaged_task1.cpp.i:
+	$(MAKE) -f CMakeFiles/part9_packaged_task1.dir/build.make CMakeFiles/part9_packaged_task1.dir/multithreading/part9_packaged_task1.cpp.i
+.PHONY : multithreading/part9_packaged_task1.cpp.i
+
+multithreading/part9_packaged_task1.s: multithreading/part9_packaged_task1.cpp.s
+
+.PHONY : multithreading/part9_packaged_task1.s
+
+# target to generate assembly for a file
+multithreading/part9_packaged_task1.cpp.s:
+	$(MAKE) -f CMakeFiles/part9_packaged_task1.dir/build.make CMakeFiles/part9_packaged_task1.dir/multithreading/part9_packaged_task1.cpp.s
+.PHONY : multithreading/part9_packaged_task1.cpp.s
+
 threadpool/example_threadpool.o: threadpool/example_threadpool.cpp.o
 
 .PHONY : threadpool/example_threadpool.o
@@ -959,6 +1079,9 @@ help:
 	@echo "... part8_packaged_task"
 	@echo "... edit_cache"
 	@echo "... part7_future_promise"
+	@echo "... part3_mutex2"
+	@echo "... part5_uniquelock"
+	@echo "... part3_datarace_and_mutex"
 	@echo "... rebuild_cache"
 	@echo "... 08_lock_guard"
 	@echo "... 14_hardware_concurrency"
@@ -966,9 +1089,6 @@ help:
 	@echo "... 06_timedmutex"
 	@echo "... 13_lock"
 	@echo "... 05_trylock"
-	@echo "... 09_unique_lock"
-	@echo "... part5_uniquelock"
-	@echo "... part3_datarace_and_mutex"
 	@echo "... 02_join_and_detach"
 	@echo "... 03_mutex"
 	@echo "... 11_deadlock"
@@ -977,7 +1097,10 @@ help:
 	@echo "... part6_condition_var"
 	@echo "... 10_conditional_var"
 	@echo "... part2"
-	@echo "... part3_mutex2"
+	@echo "... part9_packaged_task1"
+	@echo "... 09_unique_lock"
+	@echo "... main"
+	@echo "... logger"
 	@echo "... part1"
 	@echo "... cppnuts/02_join_and_detach.o"
 	@echo "... cppnuts/02_join_and_detach.i"
@@ -1015,6 +1138,12 @@ help:
 	@echo "... cppnuts/14_hardware_concurrency.o"
 	@echo "... cppnuts/14_hardware_concurrency.i"
 	@echo "... cppnuts/14_hardware_concurrency.s"
+	@echo "... logger/logger.o"
+	@echo "... logger/logger.i"
+	@echo "... logger/logger.s"
+	@echo "... logger/main.o"
+	@echo "... logger/main.i"
+	@echo "... logger/main.s"
 	@echo "... multithreading/part1.o"
 	@echo "... multithreading/part1.i"
 	@echo "... multithreading/part1.s"
@@ -1039,6 +1168,9 @@ help:
 	@echo "... multithreading/part8_packaged_task.o"
 	@echo "... multithreading/part8_packaged_task.i"
 	@echo "... multithreading/part8_packaged_task.s"
+	@echo "... multithreading/part9_packaged_task1.o"
+	@echo "... multithreading/part9_packaged_task1.i"
+	@echo "... multithreading/part9_packaged_task1.s"
 	@echo "... threadpool/example_threadpool.o"
 	@echo "... threadpool/example_threadpool.i"
 	@echo "... threadpool/example_threadpool.s"
