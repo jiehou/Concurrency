@@ -7,7 +7,7 @@
 using namespace std;
 
 /* Note:
-* 0) mutex, lock_guar
+* 0) mutex, lock_guard
 * 1) use mutex to synchronize data cess
 * 2) never leak a a handle of data to outside
 * e.g. never retrun fout_ to the outside world e.g. ofstream& GetStream() { return fout_; }
