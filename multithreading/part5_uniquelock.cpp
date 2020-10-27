@@ -14,7 +14,7 @@ using namespace std;
 */
 
 /**
-* call_once(once_flag& flag, Callable&& f, Args&& ... args)
+* call_once(once_flag& flag, Callable&& f, Args&&... args)
 */
 class LogFile{
     ofstream fout_;
